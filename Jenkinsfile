@@ -22,7 +22,9 @@ pipeline {
           steps {
             echo 'Deploying..'
        snDevOpsStep()
+		  
 		sleep 5
+		  snDevOpsChange()
           }
       }
   }
