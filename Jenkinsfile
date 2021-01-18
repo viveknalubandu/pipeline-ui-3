@@ -24,7 +24,7 @@ pipeline {
        snDevOpsStep()
 		  
 		sleep 5
-		  snDevOpsChange()
+		  //snDevOpsChange()
           }
       }
   }
