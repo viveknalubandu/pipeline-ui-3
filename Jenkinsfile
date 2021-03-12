@@ -8,7 +8,7 @@ pipeline {
           steps {
             echo 'build ...'
            //snDevOpsStep()
-snDevOpsArtifact(artifactsPayload:"""{"artifacts": [{"name": "devops_pipeline_demo.jar","version": "1.4","semanticVersion": "1.4.0","repositoryName": "devops_pipeline_demo"}],"stageName": "build"}""")
+snDevOpsArtifact(artifactsPayload:"""{"artifacts": [{"name": "devops_pipeline_demo.jar","version": "1.5","semanticVersion": "1.5.0","repositoryName": "devops_pipeline_demo"}],"stageName": "build"}""")
    		sleep 5
 	snDevOpsChange()
           }
