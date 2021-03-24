@@ -8,9 +8,9 @@ pipeline {
           steps {
             echo 'build ...'
            //snDevOpsStep()
-snDevOpsArtifact(artifactsPayload:"""{"artifacts": [{"name": "devops_pipeline_demo.jar","version": "1.8","semanticVersion": "1.8.0","repositoryName": "devops_pipeline_demo"}],"stageName": "build"}""")
+//snDevOpsArtifact(artifactsPayload:"""{"artifacts": [{"name": "devops_pipeline_demo.jar","version": "1.8","semanticVersion": "1.8.0","repositoryName": "devops_pipeline_demo"}],"stageName": "build"}""")
    		sleep 5
-	snDevOpsChange()
+	//snDevOpsChange()
           }
       }
       stage("test") {
@@ -24,9 +24,9 @@ snDevOpsArtifact(artifactsPayload:"""{"artifacts": [{"name": "devops_pipeline_de
           steps {
             echo 'Deploying.'
        //snDevOpsStep()
-	snDevOpsPackage(name: "devops_pipeline_demo", artifactsPayload: """{"artifacts": [{"name": "devops_pipeline_demo.jar","version": "1.8","semanticVersion": "1.8.0","repositoryName": "devops_pipeline_demo"}]}""")            
+	//snDevOpsPackage(name: "devops_pipeline_demo", artifactsPayload: """{"artifacts": [{"name": "devops_pipeline_demo.jar","version": "1.8","semanticVersion": "1.8.0","repositoryName": "devops_pipeline_demo"}]}""")            
 		sleep 5
-		snDevOpsChange()
+		//snDevOpsChange()
           }
       }
   }
