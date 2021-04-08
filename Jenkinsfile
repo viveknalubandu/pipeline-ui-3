@@ -16,6 +16,8 @@ pipeline {
       stage("test") {
            steps {
              echo 'test ..'
+	sh 'mvn clean test -Dpublish'
+                junit '**/target/surefire-reports/*.xml'
               //snDevOpsStep()
   		sleep 5
            }
